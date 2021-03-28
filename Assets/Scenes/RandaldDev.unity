@@ -210,8 +210,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304236027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.44439, y: -7.4024982, z: 48.098354}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalPosition: {x: 28.1, y: -5, z: 29.6}
+  m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 1152262867}
   - component: {fileID: 1152262866}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -444,7 +444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152262861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.67, y: -5.63, z: 2.18}
+  m_LocalPosition: {x: 23.1, y: -0.4, z: 24.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -490,6 +490,7 @@ GameObject:
   - component: {fileID: 1257308955}
   - component: {fileID: 1257308957}
   - component: {fileID: 1257308956}
+  - component: {fileID: 1257308958}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -562,3 +563,17 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1257308958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257308954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58c19e0e1537d0445b5cc54732db3f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 1152262865}
+  cameraOffset: {x: 0, y: 0, z: 0}
