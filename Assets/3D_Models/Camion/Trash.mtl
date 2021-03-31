@@ -1,0 +1,294 @@
+# Rhino
+newmtl Cassone
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd Metal_Steel_Textured.jpg
+
+newmtl Vetro
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd VetroRiflesso-1.jpg
+
+newmtl Motrice
+Ka 0.1725 0.1725 0.7059
+Kd 0.1725 0.1725 0.7059
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 255
+map_Kd Metal_St.jpg
+
+newmtl Telaio
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd Aluminum_Anodized 2.jpg
+
+newmtl Telaio
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd Aluminum_Anodized 2.jpg
+
+newmtl Scarico
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd Aluminum_Anodized 1.jpg
+
+newmtl Telaio
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd Aluminum_Anodized 2.jpg
+
+newmtl Motrice
+Ka 0.1725 0.1725 0.7059
+Kd 0.1725 0.1725 0.7059
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 255
+map_Kd Metal_St.jpg
+
+newmtl Pistoni
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd aluminium.jpg
+
+newmtl material1
+Ka 0.0000 0.0000 0.0000
+Kd 0.0000 0.0000 0.0000
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0.4
+
+newmtl Griglia
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd Aluminum_Anodized 4.jpg
+
+newmtl Vetro
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd VetroRiflesso-1.jpg
+
+newmtl material2
+Ka 0.0000 0.0000 0.0000
+Kd 0.4353 0.4353 0.4353
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0.4
+
+newmtl material3
+Ka 0.0000 0.0000 0.0000
+Kd 0.4353 0.4353 0.4353
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0.4
+
+newmtl Plastica
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd BaseplateGray3.jpg
+
+newmtl Cassone
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd Metal_Steel_Textured.jpg
+
+newmtl Motrice
+Ka 0.1725 0.1725 0.7059
+Kd 0.1725 0.1725 0.7059
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 255
+map_Kd Metal_St.jpg
+
+newmtl Plastica
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd BaseplateGray3.jpg
+
+newmtl Pistoni
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd aluminium.jpg
+
+newmtl Cerchioni
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd aluminium.jpg
+
+newmtl LuciGialle
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd giallo.jpg
+
+newmtl Cerchioni
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd aluminium.jpg
+
+newmtl Motrice
+Ka 0.1725 0.1725 0.7059
+Kd 0.1725 0.1725 0.7059
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 255
+map_Kd Metal_St.jpg
+
+newmtl Telaio
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd Aluminum_Anodized 2.jpg
+
+newmtl LuciRosse
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd rosso.jpg
+
+newmtl Ruote
+Ka 0.1804 0.1608 0.1608
+Kd 0.1804 0.1608 0.1608
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd grigio.jpg
+
+newmtl Pistoni
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd aluminium.jpg
+
+newmtl Telaio
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd Aluminum_Anodized 2.jpg
+
+newmtl LuciRosse
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd rosso.jpg
+
+newmtl material4
+Ka 0.0000 0.0000 0.0000
+Kd 0.0000 0.0000 0.0000
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0.4
+
+newmtl Vetro
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd VetroRiflesso-1.jpg
+
+newmtl Motrice
+Ka 0.1725 0.1725 0.7059
+Kd 0.1725 0.1725 0.7059
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 255
+map_Kd Metal_St.jpg
+
+newmtl Asfalto
+Ka 0.4980 0.4980 0.4980
+Kd 0.4980 0.4980 0.4980
+Ks 1.0000 1.0000 1.0000
+Tf 0.0000 0.0000 0.0000
+d 1.0000
+Ns 0
+map_Kd asfalto.jpg
+
