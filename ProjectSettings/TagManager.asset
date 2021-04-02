@@ -12,6 +12,7 @@ TagManager:
   - Paper
   - Glass
   - Metal
+  - Truck
   layers:
   - Default
   - TransparentFX
