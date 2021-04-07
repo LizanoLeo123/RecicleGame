@@ -50,6 +50,7 @@ public class TrashBehavior : MonoBehaviour
                 if (Physics.Raycast(ray, out hitInfo))
                 {
                     string selectedBin = hitInfo.transform.tag;
+                    //Debug.Log(selectedBin);
                     switch (selectedBin)
                     {
                         case "Trashbin":
