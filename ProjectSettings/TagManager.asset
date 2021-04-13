@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Trashbin
+  - Paperbin
+  - Glassbin
+  - Metalbin
+  - Trash
+  - Paper
+  - Glass
+  - Metal
+  - Truck
   layers:
   - Default
   - TransparentFX

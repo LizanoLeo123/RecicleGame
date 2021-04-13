@@ -1,0 +1,66 @@
+# Blender MTL File: 'Waste Tins and Cans.blend'
+# Material Count: 6
+
+newmtl Body
+Ns 714.347131
+Ka 0.268182 0.268182 0.268182
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:\\Users\\Jon\\Desktop\\Blender Files\\Blender resources\\Materials\\Coca cola can skin.jpg
+
+newmtl Bottom
+Ns 422.530875
+Ka 0.962963 0.962963 0.962963
+Kd 0.614615 0.614615 0.614615
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl Pepsi
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Sprite
+Ns 714.347131
+Ka 0.268182 0.268182 0.268182
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:\\Users\\Jon\\Desktop\\Blender Files\\Blender resources\\Materials\\Sprite can skin.jpg
+
+newmtl Tin
+Ns 359.274786
+Ka 0.995455 0.995455 0.995455
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd C:\\Users\\Jon\\Desktop\\Blender Files\\Blender resources\\Materials\\Rusty Tin.jpg
+
+newmtl Top
+Ns 412.828524
+Ka 0.790909 0.790909 0.790909
+Kd 0.053447 0.053447 0.053447
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Jon\\Desktop\\Blender Files\\Blender resources\\Materials\\Soda Can top.png
