@@ -13,6 +13,7 @@ TagManager:
   - Glass
   - Metal
   - Truck
+  - Ground
   layers:
   - Default
   - TransparentFX
