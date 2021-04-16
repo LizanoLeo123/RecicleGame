@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3261712590120471538}
   - component: {fileID: 418227556}
   - component: {fileID: 418227555}
-  - component: {fileID: 418227557}
+  - component: {fileID: 1199924663119511758}
   m_Layer: 0
   m_Name: RottenBanana
   m_TagString: Trash
@@ -95,10 +95,10 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &418227555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -112,16 +112,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8021227, y: 4.340131, z: 1.9337032}
   m_Center: {x: 0.000000639984, y: 0.117780894, z: 0.5037452}
---- !u!114 &418227557
-MonoBehaviour:
+--- !u!65 &1199924663119511758
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6888735833093738129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88851b318b169894aa8587b2d9f81919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lerpTime: 3
+  serializedVersion: 2
+  m_Size: {x: 15, y: 15, z: 15}
+  m_Center: {x: 0, y: -4.6566134e-10, z: 0.000042534437}
