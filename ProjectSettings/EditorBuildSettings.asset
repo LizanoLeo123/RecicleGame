@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0cb824fc37c37004183949c2c99780c7
+  - enabled: 1
+    path: Assets/Scenes/RandaldDev.unity
+    guid: 9fb741a5976ac7f4c961571440d3905c
+  - enabled: 1
+    path: Assets/Scenes/LeoDev.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
