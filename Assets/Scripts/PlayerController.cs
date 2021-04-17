@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetAxis("HorizontalKey") == 0 && Input.GetAxis("VerticalKey") == 0){
             playerAnimator.SetBool("isWalking", false);
+            playerRb.velocity = Vector3.zero;
         }else if(Input.GetAxis("HorizontalKey") < 0 ){
             playerAnimator.SetBool("isWalking", true);
         }else if(Input.GetAxis("HorizontalKey") > 0 ){
