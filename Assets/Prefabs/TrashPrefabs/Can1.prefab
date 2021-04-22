@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8706876651100038348}
   - component: {fileID: 194167734036720119}
   - component: {fileID: 2000810396}
+  - component: {fileID: -724820065784320893}
   m_Layer: 0
   m_Name: Can1
   m_TagString: Metal
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 809562501865484361}
   m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 2.766897, y: -0.017239567, z: -3.6906557}
-  m_LocalScale: {x: 10, y: 10, z: 12.8}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -124,3 +125,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: -4.6566134e-10, z: 0.000042534437}
+--- !u!114 &-724820065784320893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809562501865484361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fde6d552d8f4764cb1c5c72e551caf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipo: 4

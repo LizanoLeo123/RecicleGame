@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1567145210}
   - component: {fileID: 1567145209}
   - component: {fileID: -5869008196548518091}
+  - component: {fileID: 935571994789242239}
   m_Layer: 0
   m_Name: Wine
   m_TagString: Glass
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4501686886965002947}
   m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -0.069027334, y: 0.21813613, z: 0.30234843}
-  m_LocalScale: {x: 4.6808014, y: 4.6808014, z: 19.999998}
+  m_LocalScale: {x: 13, y: 13, z: 60}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -125,5 +126,18 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1, z: 0.05}
-  m_Center: {x: 0, y: -4.6566134e-10, z: 0.000042534437}
+  m_Size: {x: 0.14524357, y: 0.17529437, z: 0.064380184}
+  m_Center: {x: 0.00930045, y: -0.00515074, z: 0.0003565967}
+--- !u!114 &935571994789242239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501686886965002947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fde6d552d8f4764cb1c5c72e551caf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipo: 3
