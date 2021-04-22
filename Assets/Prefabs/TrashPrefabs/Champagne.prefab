@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 473327493}
   - component: {fileID: 473327494}
   - component: {fileID: 4237367257679082170}
+  - component: {fileID: -2244676061977322774}
   m_Layer: 0
   m_Name: Champagne
   m_TagString: Glass
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2327831962827899308}
   m_LocalRotation: {x: -0.703554, y: 0.070794545, z: 0.070794545, w: 0.703554}
   m_LocalPosition: {x: 0.06511076, y: 0.21599966, z: 0.2582657}
-  m_LocalScale: {x: 5.462914, y: 5.462914, z: 20.03404}
+  m_LocalScale: {x: 17, y: 17, z: 46}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -124,5 +125,18 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1, z: 0.05}
-  m_Center: {x: 0, y: -4.6566134e-10, z: 0.000042534437}
+  m_Size: {x: 0.13015518, y: 0.1, z: 0.059585948}
+  m_Center: {x: -0.0010494905, y: -2.274444e-12, z: 0.000051425854}
+--- !u!114 &-2244676061977322774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2327831962827899308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fde6d552d8f4764cb1c5c72e551caf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipo: 3

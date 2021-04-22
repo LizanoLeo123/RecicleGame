@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1666391425}
   - component: {fileID: 1666391424}
   - component: {fileID: 2661561621617476286}
+  - component: {fileID: 1544948517320139590}
   m_Layer: 0
   m_Name: RottenApple
   m_TagString: Trash
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5723361818850299259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.5, y: 1.14, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.18, y: 0.18, z: 0.18}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -125,3 +126,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15, y: 15, z: 15}
   m_Center: {x: 0, y: -4.6566134e-10, z: 0.000042534437}
+--- !u!114 &1544948517320139590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5723361818850299259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fde6d552d8f4764cb1c5c72e551caf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipo: 1
