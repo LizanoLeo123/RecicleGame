@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1168842655}
   - component: {fileID: 1168842654}
   - component: {fileID: 4350966466852998121}
+  - component: {fileID: 4487335103740529774}
   m_Layer: 0
   m_Name: Hennessy
   m_TagString: Glass
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3023894259289528941}
   m_LocalRotation: {x: -0.6454964, y: 0.28867695, z: 0.28867695, w: 0.6454964}
   m_LocalPosition: {x: -0.14138797, y: 0.16621311, z: 0.41493976}
-  m_LocalScale: {x: 5.3161964, y: 5.3161964, z: 14.999999}
+  m_LocalScale: {x: 17, y: 17, z: 45}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -124,5 +125,18 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.10649733, y: 0.099999994, z: 0.049999993}
-  m_Center: {x: 0.0032486694, y: -1.1880193e-10, z: 0.000042533877}
+  m_Size: {x: 0.13284111, y: 0.099999994, z: 0.057922237}
+  m_Center: {x: 0.0015523926, y: 3.1760428e-12, z: -0.00031121174}
+--- !u!114 &4487335103740529774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3023894259289528941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fde6d552d8f4764cb1c5c72e551caf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipo: 3

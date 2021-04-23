@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1670801752}
   - component: {fileID: 1670801751}
   - component: {fileID: -6455793860492494445}
+  - component: {fileID: 2310192530716470797}
   m_Layer: 0
   m_Name: RottenPear
   m_TagString: Trash
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7984922634911964139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.12, y: 1.33, z: 0}
-  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
+  m_LocalScale: {x: 0.21, y: 0.21, z: 0.21}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -125,3 +126,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15, y: 15, z: 15}
   m_Center: {x: 0, y: -4.6566134e-10, z: 0.000042534437}
+--- !u!114 &2310192530716470797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984922634911964139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fde6d552d8f4764cb1c5c72e551caf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipo: 1
