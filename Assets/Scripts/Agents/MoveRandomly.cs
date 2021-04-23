@@ -13,9 +13,13 @@ public class MoveRandomly : MonoBehaviour
     [SerializeField] Vector3 Target;
     [SerializeField] Animator agentAnimation;
 
+    float myX;
+    float myZ;
     void Start()
     {
-       navMeshAgent = gameObject.GetComponent<NavMeshAgent>(); 
+        navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
+        myX = gameObject.transform.position.x;
+        myZ = gameObject.transform.position.z;
     }
 
     void Update()
@@ -30,9 +34,10 @@ public class MoveRandomly : MonoBehaviour
     IEnumerator MovementCoroutine()
     {
         agentAnimation.SetBool("isWalking", false);
-        yield return new WaitForSeconds(0.2f);
-        float myX = gameObject.transform.position.x;
-        float myZ = gameObject.transform.position.z;
+        navMeshAgent.SetDestination(transform.position);
+        yield return new WaitForSeconds(2f);
+        //float myX = gameObject.transform.position.x;
+        //float myZ = gameObject.transform.position.z;
         
         float xPos = myX + Random.Range(myX - distance, myX + distance);
         float zPos = myZ + Random.Range(myZ - distance, myZ + distance);
