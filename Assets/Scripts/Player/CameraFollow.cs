@@ -5,16 +5,16 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     // Target object
-    public Transform targetObject;
+    [SerializeField] Transform targetObject;
 
     // Default distance between the target and the player
-    public Vector3 cameraOffset;
+    [SerializeField] Vector3 cameraOffset;
 
     // Smooth factor will use in Camera Rotation
-    public float SmoothFactor = 0.5f;
+    [SerializeField] float SmoothFactor = 0.5f;
 
     // Start is called before the first frame update
-    public bool lookAtTarget = false;
+    [SerializeField] bool lookAtTarget = false;
 
     void Start()
     {

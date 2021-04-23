@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
-    public GameObject pauseMenuUI;
-    public string menuSceneName;
-    public string restartSceneName;
+    [SerializeField] static bool GameIsPaused = false;
+    [SerializeField] GameObject pauseMenuUI;
+    [SerializeField] string menuSceneName;
+    [SerializeField] string restartSceneName;
 
     void Update()
     {
