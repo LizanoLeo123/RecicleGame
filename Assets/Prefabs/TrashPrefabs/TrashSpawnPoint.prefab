@@ -57,6 +57,5 @@ MonoBehaviour:
   - {fileID: 6888735833093738129, guid: b45adfa685552f5439bb0f7944425bd2, type: 3}
   - {fileID: 49902251304345325, guid: c3905926275609142aba8cbdbfd5c8b6, type: 3}
   - {fileID: 7984922634911964139, guid: 5b756c084e6a9334db35667fde7e5a99, type: 3}
-  minValue: 3
-  maxValue: 7
-  numberOfObjects: 5
+  seconds: 15
+  numberOfObjects: 15
