@@ -29,6 +29,7 @@ public class EnvironmentTrash : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
+            uiManager.ActivateTrashMessage(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if (inventory.hasSapce(1))
@@ -40,11 +41,15 @@ public class EnvironmentTrash : MonoBehaviour
                 }
                 else
                 {
-
+                    uiManager.PickupTrash(5); //Show message of full inventory
                 }
-
-                
             }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform.CompareTag("Player"))
+            uiManager.ActivateTrashMessage(false);
     }
 }

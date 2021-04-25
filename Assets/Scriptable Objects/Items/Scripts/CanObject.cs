@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Default Object", menuName = "Inventory System/Items/Can")]
 public class CanObject : ItemObject
 {
-     public void Awake(){
+    public void Awake(){
         type = ItemType.Can;
     }   
 }

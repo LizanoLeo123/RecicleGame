@@ -5,7 +5,7 @@ using UnityEngine;
 public enum ItemType{
     Can,
     GlassBottle,
-    PapaerBall,
+    PaperBall,
     Default
 }
 public abstract class ItemObject : ScriptableObject
