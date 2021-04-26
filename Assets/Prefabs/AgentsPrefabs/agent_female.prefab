@@ -1011,16 +1011,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197932914702265387}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000016292068}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0.00000028088027}
   m_LocalPosition: {x: -3.7, y: 1.4, z: 26.19}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 197932913261823219}
   - {fileID: 197932914622901199}
   - {fileID: 197932913923777310}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.99998, z: 0}
 --- !u!95 &197932914702265391
 Animator:
   serializedVersion: 3
@@ -1104,9 +1104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  distance: 100
+  distance: 150
   speed: 5
-  newtarget: 5
+  newtarget: 4
   navMeshAgent: {fileID: 197932914702265386}
   Target: {x: 0, y: 0, z: 0}
   agentAnimation: {fileID: 197932914702265391}

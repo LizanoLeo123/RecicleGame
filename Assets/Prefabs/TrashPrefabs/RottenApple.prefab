@@ -139,3 +139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 1
+  inventory: {fileID: 11400000, guid: bb3a3cf290596cd44933917527bf9d34, type: 2}
+  itemDisplay: {fileID: 11400000, guid: ed0165afd8fe5ff43b70564c2d8b46ba, type: 2}
+  pickup: {fileID: 8300000, guid: d87df9f0576d29242b4bbd72b6cd0eb6, type: 3}
