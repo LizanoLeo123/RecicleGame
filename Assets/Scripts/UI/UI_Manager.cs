@@ -10,6 +10,7 @@ public class UI_Manager : MonoBehaviour
 
     [Header("UI Labels")]
     public Text trashIndicator1;
+    public GameObject trashMessage;
     public GameObject message;
     public GameObject minigameMessage;
 
@@ -29,6 +30,7 @@ public class UI_Manager : MonoBehaviour
         bottles = 0;
         cans = 0;
 
+        trashMessage.SetActive(false);
         message.SetActive(false);
         trashIndicator1.text = "";
         miniGamePanel.SetActive(false);
@@ -43,6 +45,7 @@ public class UI_Manager : MonoBehaviour
 
     public void PickupTrash(int type)
     {
+        trashMessage.SetActive(false);
         message.SetActive(true);
         switch (type)
         {
@@ -62,8 +65,16 @@ public class UI_Manager : MonoBehaviour
                 cans++;
                 trashIndicator1.text = "Cans and metals: " + cans.ToString();
                 break;
+            case 5:
+                trashIndicator1.text = "¡Inventario lleno!";
+                break;
         }
         StartCoroutine(HideMessage());
+    }
+
+    public void ActivateTrashMessage(bool state)
+    {
+        trashMessage.SetActive(state);
     }
 
     public void ActivateMinigamePanel(bool state)

@@ -141,4 +141,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tipo: 4
   inventory: {fileID: 11400000, guid: bb3a3cf290596cd44933917527bf9d34, type: 2}
-  itemDisplay: {fileID: 11400000, guid: 87590d7351338454cad050ff1d1c8de4, type: 2}
+  itemDisplay: {fileID: 11400000, guid: 7804c0caab912f748acc19a2b46cc870, type: 2}
+  pickup: {fileID: 8300000, guid: d87df9f0576d29242b4bbd72b6cd0eb6, type: 3}
