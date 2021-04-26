@@ -141,3 +141,4 @@ MonoBehaviour:
   tipo: 1
   inventory: {fileID: 11400000, guid: bb3a3cf290596cd44933917527bf9d34, type: 2}
   itemDisplay: {fileID: 11400000, guid: 75158a4a985746d448091e374930ddc6, type: 2}
+  pickup: {fileID: 8300000, guid: d87df9f0576d29242b4bbd72b6cd0eb6, type: 3}

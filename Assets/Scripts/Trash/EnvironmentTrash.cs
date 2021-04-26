@@ -11,11 +11,15 @@ public class EnvironmentTrash : MonoBehaviour
 
     public ItemObject itemDisplay;
 
+    public AudioClip pickup;
+    private Transform soundPoint;
+
     private UI_Manager uiManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        soundPoint = GameObject.Find("SoundPoint").transform;
         uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>();
     }
 
@@ -37,6 +41,7 @@ public class EnvironmentTrash : MonoBehaviour
                     inventory.addItem(itemDisplay, 1);
                     //Debug.Log("Recogiste un " + transform.tag);
                     uiManager.PickupTrash(this.tipo);
+                    AudioSource.PlayClipAtPoint(pickup, soundPoint.position);
                     Destroy(gameObject);
                 }
                 else
