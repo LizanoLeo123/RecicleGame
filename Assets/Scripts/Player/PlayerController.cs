@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator playerAnimator;
     Vector3 forward, right;
     bool isGrounded = true;
-
+    AudioSource audioWalking;
     
     void Start()
     {
@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
         forward.y = 0;
         forward = Vector3.Normalize(forward);
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
+        audioWalking= GetComponent<AudioSource>();
     }
 
     void Update()
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
         
         if(isGrounded){
             if(Input.GetKeyDown(KeyCode.Space)){
+                audioWalking.Stop();
                 playerRb.AddForce(Vector3.up * jumpSpeed);
                 isGrounded = false;
                 playerAnimator.SetTrigger("isJump");
@@ -44,7 +46,12 @@ public class PlayerController : MonoBehaviour
         }
         
         if(Input.anyKey){
+            if(!audioWalking.isPlaying){
+                audioWalking.Play();
+            }
             move();
+        }else{
+            audioWalking.Stop();
         }
     }
 
@@ -57,7 +64,6 @@ public class PlayerController : MonoBehaviour
         transform.forward = heading;
         transform.position += rightMovement;
         transform.position += upMovement;
-
     }
 
     private void OnCollisionEnter(Collision collision){
