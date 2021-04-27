@@ -114,6 +114,7 @@ public class TrashBehavior : MonoBehaviour
 
     public void SelectTrashbin(int selected)
     {
+        spawner.ReduceAmount();
         //0 Trash, 1 Paper, 2 Glass, 3 Metal
         movable = false;
         currentPoint = selected;
@@ -144,10 +145,12 @@ public class TrashBehavior : MonoBehaviour
             if(transform.CompareTag("Trash"))
             {
                 Debug.Log("BIEN! Soy " + transform.tag + " y me tiraron en " + other.transform.tag);
+                spawner.PlaySoundEffect(true);
             }
             else
             {
                 Debug.Log("MAL HECHO! Soy " + transform.tag + " y me tiraron donde no es.");
+                spawner.PlaySoundEffect(false);
             }    
         }
         if (other.transform.CompareTag("Paperbin"))
@@ -155,10 +158,12 @@ public class TrashBehavior : MonoBehaviour
             if (transform.CompareTag("Paper"))
             {
                 Debug.Log("BIEN! Soy " + transform.tag + " y me tiraron en " + other.transform.tag);
+                spawner.PlaySoundEffect(true);
             }
             else
             {
                 Debug.Log("MAL HECHO! Soy " + transform.tag + " y me tiraron donde no es.");
+                spawner.PlaySoundEffect(false);
             }
         }
         if (other.transform.CompareTag("Glassbin"))
@@ -166,10 +171,12 @@ public class TrashBehavior : MonoBehaviour
             if (transform.CompareTag("Glass"))
             {
                 Debug.Log("BIEN! Soy " + transform.tag + " y me tiraron en " + other.transform.tag);
+                spawner.PlaySoundEffect(true);
             }
             else
             {
                 Debug.Log("MAL HECHO! Soy " + transform.tag + " y me tiraron donde no es.");
+                spawner.PlaySoundEffect(false);
             }
         }
         if (other.transform.CompareTag("Metalbin"))
@@ -177,10 +184,12 @@ public class TrashBehavior : MonoBehaviour
             if (transform.CompareTag("Metal"))
             {
                 Debug.Log("BIEN! Soy " + transform.tag + " y me tiraron en " + other.transform.tag);
+                spawner.PlaySoundEffect(true);
             }
             else
             {
                 Debug.Log("MAL HECHO! Soy " + transform.tag + " y me tiraron donde no es.");
+                spawner.PlaySoundEffect(false);
             }
         }
     }
