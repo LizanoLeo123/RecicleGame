@@ -11,7 +11,8 @@ public class InventoryObject : ScriptableObject
 
     public void addItem(ItemObject _item, int _amount)
     {
-        if (this.capcaity < (this.totalAmount + _amount)){
+        if (this.capcaity < (this.totalAmount + _amount))
+        {
             return;
         }
 
@@ -24,6 +25,7 @@ public class InventoryObject : ScriptableObject
                 return;
             }
         }
+        this.totalAmount += _amount;
         Container.Add(new InventorySlot(_item, _amount));
 
     }
