@@ -23,6 +23,8 @@ public class TrashBehavior : MonoBehaviour
 
     private TrashSpawnBehavior spawner;
 
+    private UI_Manager uiManager;
+
     private bool movable;
 
     //private Vector3 originalposition;
@@ -30,6 +32,7 @@ public class TrashBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>();
         rb = GetComponent<Rigidbody>();
         spawner = GameObject.Find("TrashSpawner").GetComponent<TrashSpawnBehavior>();
         //originalposition = transform.position;
@@ -146,11 +149,13 @@ public class TrashBehavior : MonoBehaviour
             {
                 Debug.Log("BIEN! Soy " + transform.tag + " y me tiraron en " + other.transform.tag);
                 spawner.PlaySoundEffect(true);
+                uiManager.GainOrLoss(true);
             }
             else
             {
                 Debug.Log("MAL HECHO! Soy " + transform.tag + " y me tiraron donde no es.");
                 spawner.PlaySoundEffect(false);
+                uiManager.GainOrLoss(false);
             }    
         }
         if (other.transform.CompareTag("Paperbin"))
@@ -159,11 +164,13 @@ public class TrashBehavior : MonoBehaviour
             {
                 Debug.Log("BIEN! Soy " + transform.tag + " y me tiraron en " + other.transform.tag);
                 spawner.PlaySoundEffect(true);
+                uiManager.GainOrLoss(true);
             }
             else
             {
                 Debug.Log("MAL HECHO! Soy " + transform.tag + " y me tiraron donde no es.");
                 spawner.PlaySoundEffect(false);
+                uiManager.GainOrLoss(false);
             }
         }
         if (other.transform.CompareTag("Glassbin"))
@@ -172,11 +179,13 @@ public class TrashBehavior : MonoBehaviour
             {
                 Debug.Log("BIEN! Soy " + transform.tag + " y me tiraron en " + other.transform.tag);
                 spawner.PlaySoundEffect(true);
+                uiManager.GainOrLoss(true);
             }
             else
             {
                 Debug.Log("MAL HECHO! Soy " + transform.tag + " y me tiraron donde no es.");
                 spawner.PlaySoundEffect(false);
+                uiManager.GainOrLoss(false);
             }
         }
         if (other.transform.CompareTag("Metalbin"))
@@ -185,11 +194,13 @@ public class TrashBehavior : MonoBehaviour
             {
                 Debug.Log("BIEN! Soy " + transform.tag + " y me tiraron en " + other.transform.tag);
                 spawner.PlaySoundEffect(true);
+                uiManager.GainOrLoss(true);
             }
             else
             {
                 Debug.Log("MAL HECHO! Soy " + transform.tag + " y me tiraron donde no es.");
                 spawner.PlaySoundEffect(false);
+                uiManager.GainOrLoss(false);
             }
         }
     }

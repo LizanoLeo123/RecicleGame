@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     Vector3 forward, right;
     bool isGrounded = true;
     AudioSource audioWalking;
+
+    private UI_Manager uiManager;
     
     void Start()
     {
@@ -19,6 +21,8 @@ public class PlayerController : MonoBehaviour
         forward = Vector3.Normalize(forward);
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
         audioWalking= GetComponent<AudioSource>();
+
+        uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>();
     }
 
     void Update()
@@ -53,6 +57,12 @@ public class PlayerController : MonoBehaviour
         }else{
             audioWalking.Stop();
         }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            uiManager.FastTravel();
+            StartCoroutine(MoveToTruck());
+        }
     }
 
     void move(){
@@ -70,5 +80,12 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground")){
             isGrounded = true;
         }
+    }
+
+
+    IEnumerator MoveToTruck()
+    {
+        yield return new WaitForSeconds(0.99f);
+        transform.position = new Vector3(-16, 15, 144);
     }
 }
