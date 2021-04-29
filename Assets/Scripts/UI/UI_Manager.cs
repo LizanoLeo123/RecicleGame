@@ -16,8 +16,17 @@ public class UI_Manager : MonoBehaviour
 
     [Header("UI In Minigame")]
     public GameObject miniGamePanel;
-    
 
+    [Header("SoundFX")]
+    public AudioClip fullFX;
+    private Transform soundPoint;
+
+    [Header("Inventory Object")]
+    public Text ecolones;
+    public InventoryObject inventory;
+
+    private Animator animator;
+    
     int fruits;
     int papers;
     int bottles;
@@ -25,6 +34,10 @@ public class UI_Manager : MonoBehaviour
 
     private void Start()
     {
+        ecolones.text = inventory.money.ToString();
+        animator = GetComponent<Animator>();
+        soundPoint = GameObject.Find("SoundPoint").transform;
+
         fruits = 0;
         papers = 0;
         bottles = 0;
@@ -67,6 +80,7 @@ public class UI_Manager : MonoBehaviour
                 break;
             case 5:
                 trashIndicator1.text = "¡Inventario lleno!";
+                AudioSource.PlayClipAtPoint(fullFX, soundPoint.position);
                 break;
         }
         StartCoroutine(HideMessage());
@@ -81,6 +95,7 @@ public class UI_Manager : MonoBehaviour
     {
         inGamePanel.SetActive(!state);
         miniGamePanel.SetActive(state);
+        animator.SetBool("Minigame", state);
     }
 
     public void ActivateMinigameMessage(bool state)
@@ -93,5 +108,38 @@ public class UI_Manager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         trashIndicator1.text = "";
         message.SetActive(false);
+    }
+
+    public void FastTravel()
+    {
+        animator.SetTrigger("Exit");
+    }
+
+    public void GainOrLoss(bool decision)
+    {
+        StartCoroutine(AdjustMoney(decision));
+        if (decision) //Selected well
+        {
+            animator.SetTrigger("Gain");
+        }
+        else //Selected bad
+        {
+            animator.SetTrigger("Loss");
+        }
+    }
+
+    IEnumerator AdjustMoney(bool decision)
+    {
+        //Wait for message before updating money balance
+        yield return new WaitForSeconds(1f);
+        if (decision) //Selected well
+        {
+            inventory.money += 50;
+        }
+        else //Selected bad
+        {
+            inventory.money -= 10;
+        }
+        ecolones.text = inventory.money.ToString();
     }
 }
