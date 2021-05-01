@@ -13,6 +13,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject trashMessage;
     public GameObject message;
     public GameObject minigameMessage;
+    public GameObject finalMessage;
 
     [Header("UI In Minigame")]
     public GameObject miniGamePanel;
@@ -24,6 +25,8 @@ public class UI_Manager : MonoBehaviour
     [Header("Inventory Object")]
     public Text ecolones;
     public InventoryObject inventory;
+
+    private GameManager gameManager;
 
     private Animator animator;
     
@@ -37,6 +40,7 @@ public class UI_Manager : MonoBehaviour
         ecolones.text = inventory.money.ToString();
         animator = GetComponent<Animator>();
         soundPoint = GameObject.Find("SoundPoint").transform;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         fruits = 0;
         papers = 0;
@@ -48,6 +52,7 @@ public class UI_Manager : MonoBehaviour
         trashIndicator1.text = "";
         miniGamePanel.SetActive(false);
         minigameMessage.SetActive(false);
+        finalMessage.SetActive(false);
     }
 
     //Types of Trash
@@ -141,5 +146,22 @@ public class UI_Manager : MonoBehaviour
             inventory.money -= 10;
         }
         ecolones.text = inventory.money.ToString();
+        gameManager.CheckCondition();
+    }
+
+    public void ShowFinalMessage()
+    {
+        ActivateMinigamePanel(false);
+        trashMessage.SetActive(false);
+        message.SetActive(false);
+        trashIndicator1.text = "";
+        miniGamePanel.SetActive(false);
+        minigameMessage.SetActive(false);
+        finalMessage.SetActive(true);
+    }
+
+    public void FadeOut()
+    {
+        animator.SetTrigger("Exit");
     }
 }
