@@ -176,7 +176,8 @@ public class TrashSpawnBehavior : MonoBehaviour
             cam1.SetActive(false);
             player.SetActive(false);
             Container = inventory.Container;
-            SpawnNextTrash();
+            if(inventory.totalAmount != 0)
+                SpawnNextTrash();
         }
         
     }

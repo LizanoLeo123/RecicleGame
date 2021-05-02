@@ -37,6 +37,7 @@ public class UI_Manager : MonoBehaviour
 
     private void Start()
     {
+        inventory.money = 0;
         ecolones.text = inventory.money.ToString();
         animator = GetComponent<Animator>();
         soundPoint = GameObject.Find("SoundPoint").transform;
