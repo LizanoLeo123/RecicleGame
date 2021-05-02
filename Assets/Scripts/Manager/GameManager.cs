@@ -11,17 +11,35 @@ public class GameManager : MonoBehaviour
     [Header("Inventory")]
     public InventoryObject inventory;
 
+    [Header("Number of the day")]
+    public int day;
+
+    [Header("Player Gameobject")]
+    public PlayerController player;
+
     private UI_Manager uiManager;
 
     private void Start()
     {
+        inventory.money = 0;
         uiManager = GameObject.Find("Canvas").GetComponent<UI_Manager>();
         inventory.money = 0;
+
+        switch (day)
+        {
+            //Upgrade inventory on day 2
+            case 2:
+                inventory.capcaity = 40;
+                break;
+            case 3:
+                player.moveSpeed = 7f;
+                break;
+        }
     }
 
     public void CheckCondition()
     {
-        if (inventory.money >= 2700) //2700
+        if (inventory.money >= 300) //2700
             StartCoroutine(LoadNextScene());
     }
 

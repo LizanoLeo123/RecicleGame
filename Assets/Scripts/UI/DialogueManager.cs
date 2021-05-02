@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    [Header("Self")]
+    [Header("Control elements")]
     public GameObject self;
+    public GameObject player;
 
     [Header("List of Dialogues")]
     public List<Dialogue> dialogues;
@@ -20,6 +21,7 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         index = -1;
+        player.SetActive(false);
         ShowNextDialogue();
     }
 
@@ -29,6 +31,7 @@ public class DialogueManager : MonoBehaviour
         if(index == dialogues.Count)
         {
             index = 0;
+            player.SetActive(true);
             self.SetActive(false);
             return;
         }

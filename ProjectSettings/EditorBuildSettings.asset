@@ -8,10 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 0cb824fc37c37004183949c2c99780c7
-  - enabled: 1
-    path: Assets/Scenes/RandaldDev.unity
-    guid: 9fb741a5976ac7f4c961571440d3905c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/LeoDev.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Day2.unity
+    guid: 3fea416609b6b8240a60b30b260132da
+  - enabled: 1
+    path: Assets/Scenes/Day3.unity
+    guid: 4d44fa0737285e74782fc501ab407315
   m_configObjects: {}
