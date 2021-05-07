@@ -14,6 +14,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject message;
     public GameObject minigameMessage;
     public GameObject finalMessage;
+    public Text achievementLabel;
 
     [Header("UI In Minigame")]
     public GameObject miniGamePanel;
@@ -90,6 +91,12 @@ public class UI_Manager : MonoBehaviour
                 break;
         }
         StartCoroutine(HideMessage());
+    }
+
+    public void ShowAchievement(string achieve)
+    {
+        animator.SetTrigger("Logro");
+        achievementLabel.text = "Logro Desbloqueado:\n Conociste a " + achieve;
     }
 
     public void ActivateTrashMessage(bool state)
