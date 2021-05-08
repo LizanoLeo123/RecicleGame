@@ -43,6 +43,10 @@ public class GameManager : MonoBehaviour
 
         switch (day)
         {
+            case 1:
+                inventory.capcaity = 20;
+                inventory.money = 0;
+                break;
             //Upgrade inventory on day 2
             case 2:
                 inventory.capcaity = 40;
@@ -55,7 +59,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckCondition()
     {
-        if (inventory.money >= 300) //Collect this amount of ecolones to win
+        if (inventory.money >= 3000) //Collect this amount of ecolones to win
             StartCoroutine(LoadNextScene());
     }
 

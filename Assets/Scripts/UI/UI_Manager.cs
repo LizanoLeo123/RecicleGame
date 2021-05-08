@@ -7,6 +7,7 @@ public class UI_Manager : MonoBehaviour
 {
     [Header("UI In Game")]
     public GameObject inGamePanel;
+    public GameObject introPanel;
 
     [Header("UI Labels")]
     public Text trashIndicator1;
@@ -55,6 +56,7 @@ public class UI_Manager : MonoBehaviour
         miniGamePanel.SetActive(false);
         minigameMessage.SetActive(false);
         finalMessage.SetActive(false);
+        StartCoroutine(DeactivateIntroPanel(1f));
     }
 
     //Types of Trash
@@ -95,6 +97,7 @@ public class UI_Manager : MonoBehaviour
 
     public void ShowAchievement(string achieve)
     {
+        introPanel.SetActive(false);
         animator.SetTrigger("Logro");
         achievementLabel.text = "Logro Desbloqueado:\n Conociste a " + achieve;
     }
@@ -125,7 +128,9 @@ public class UI_Manager : MonoBehaviour
 
     public void FastTravel()
     {
+        introPanel.SetActive(true);
         animator.SetTrigger("Exit");
+        StartCoroutine(DeactivateIntroPanel(2f));
     }
 
     public void GainOrLoss(bool decision)
@@ -165,11 +170,19 @@ public class UI_Manager : MonoBehaviour
         trashIndicator1.text = "";
         miniGamePanel.SetActive(false);
         minigameMessage.SetActive(false);
+        introPanel.SetActive(false);
         finalMessage.SetActive(true);
     }
 
     public void FadeOut()
     {
+        introPanel.SetActive(true);
         animator.SetTrigger("Exit");
+    }
+
+    IEnumerator DeactivateIntroPanel(float wait)
+    {
+        yield return new WaitForSeconds(wait);
+        introPanel.SetActive(false);
     }
 }
